@@ -1,5 +1,5 @@
 // import Dashboard from "./components/dashboard/dashboard";
-// import Home from "./pages/home/Home";
+import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 // import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
@@ -15,7 +15,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} /> */}
+        <Route exact path="/home" element={<Home />} />
         {/*<Route exact path="/" element={<Home />} />
          <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
