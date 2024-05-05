@@ -10,6 +10,7 @@ export default function Feed() {
   useEffect(() => {
     // Define a function to fetch posts from the backend
     const fetchPosts = async () => {
+      
       try {
         const response = await axios.get("http://localhost:8080/api/v1/posts");
         setPosts(response.data);
