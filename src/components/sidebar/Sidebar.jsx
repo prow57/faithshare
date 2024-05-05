@@ -1,7 +1,10 @@
 import "./sidebar.css";
-import { RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event, School } from "@material-ui/icons";
+import {IoChatbox} from "react-icons/io5";
+import {FaBookmark, FaPlayCircle} from "react-icons/fa";
+import { MdFeed, MdGroups2 } from "react-icons/md";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 
 export default function Sidebar() {
   
@@ -21,48 +24,41 @@ export default function Sidebar() {
       <div className="sidebarWrapper">
       <ul className="sidebarList">
         <li className="sidebarListItem">
-          <RssFeed className="sidebarIcon" />
+          <MdFeed className="sidebarIcon" />
           <span className="sidebarListItemText">Feed</span>
         </li>
         <li className="sidebarListItem">
-          <Chat className="sidebarIcon" />
+          <IoChatbox className="sidebarIcon" />
           <span className="sidebarListItemText">Chats</span>
         </li>
         <li className="sidebarListItem">
-          <PlayCircleFilledOutlined className="sidebarIcon" />
+          <FaPlayCircle className="sidebarIcon" />
           <span className="sidebarListItemText">Videos</span>
         </li>
         <li className="sidebarListItem">
-          <Group className="sidebarIcon" />
+          <MdGroups2 className="sidebarIcon" />
           <span className="sidebarListItemText">Groups</span>
         </li>
         <li className="sidebarListItem">
-          <Bookmark className="sidebarIcon" />
+          <FaBookmark className="sidebarIcon" />
           <span className="sidebarListItemText">Bookmarks</span>
         </li>
         <li className="sidebarListItem">
-          <HelpOutline className="sidebarIcon" />
-          <span className="sidebarListItemText">Forums</span>
-        </li>
-        <li className="sidebarListItem">
-          <WorkOutline className="sidebarIcon" />
+          <MdChurch className="sidebarIcon" />
           <span className="sidebarListItemText">Church</span>
         </li>
         <li className="sidebarListItem">
-          <Event className="sidebarIcon" />
+          <MdEvent className="sidebarIcon" />
           <span className="sidebarListItemText">Events</span>
         </li>
-        <li className="sidebarListItem">
-          <School className="sidebarIcon" />
-          <span className="sidebarListItemText">Sermons</span>
-        </li>
+      
       </ul>
       <button className="sidebarButton">Show More</button>
       <hr className="sidebarHr" />
         <ul className="sidebarList">
           {users.map(user => (
             <li className="sidebarListItem" key={user.id}>
-              <RssFeed className="sidebarIcon" />
+              <MdFeed className="sidebarIcon" />
               <span className="sidebarListItemText">{user.username}</span>
             </li>
           ))}

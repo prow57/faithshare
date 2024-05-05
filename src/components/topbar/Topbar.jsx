@@ -1,6 +1,5 @@
 import "./topbar.css";
-import { Search, Person, Chat, Notifications } from "@mui/icons";
-
+import { MdSearch, MdPerson, MdChat, MdNotifications} from "react-icons/md";
 
 export default function Topbar() {
   return (
@@ -10,7 +9,7 @@ export default function Topbar() {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <Search className="searchIcon" />
+          <MdSearch className="searchIcon" />
           <input
             placeholder="Search for friend, post or video"
             className="searchInput"
@@ -24,15 +23,15 @@ export default function Topbar() {
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
-            <Person />
+            <MdPerson />
             <span className="topbarIconBadge">1</span>
           </div>
           <div className="topbarIconItem">
-            <Chat />
+            <MdChat />
             <span className="topbarIconBadge">2</span>
           </div>
           <div className="topbarIconItem">
-            <Notifications />
+            <MdNotifications />
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
