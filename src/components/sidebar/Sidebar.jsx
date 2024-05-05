@@ -9,10 +9,15 @@ import axios from "axios";
 export default function Sidebar() {
   
   const [users, setUsers] = useState([]);
+  const token = localStorage.getItem("token");
 
   // Fetch users data from backend
   useEffect(() => {
-    axios.get("http://localhost:8080/api/v1/users")
+    axios.get("http://localhost:8080/api/v1/users", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then(response => setUsers(response.data))
       .catch(error => console.error("Error fetching users data:", error));
   }, []);
