@@ -1,5 +1,4 @@
 import "./sidebar.css";
-import { RssFeed, Chat, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event, School } from "@material-ui/icons";
 import {IoChatbox} from "react-icons/io5";
 import {FaBookmark, FaPlayCircle} from "react-icons/fa";
 import { MdFeed, MdGroups2 } from "react-icons/md";
