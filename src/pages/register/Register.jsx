@@ -1,6 +1,14 @@
 import "./register.css";
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function Register() {
+  useEffect(() => {
+    axios.get("http://localhost:8080/api/v1/register", FormData)
+      .then(response => (response.data))
+      .catch(error => console.error("Error fetching users data:", error));
+  });
+
   return (
     <div className="login">
       <div className="loginWrapper">
