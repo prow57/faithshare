@@ -1,5 +1,5 @@
 import "./post.css";
-import { MoreVert } from "@material-ui/icons";
+import { MdMoreVert } from "react-icons/md";
 import { useState, useEffect } from "react";
 import axios from 'axios'; // Import Axios for making HTTP requests
 
@@ -38,7 +38,7 @@ export default function Post() {
                 <span className="postDate">{post.date}</span>
               </div>
               <div className="postTopRight">
-                <MoreVert />
+                <MdMoreVert />
               </div>
             </div>
             <div className="postCenter">

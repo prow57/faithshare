@@ -1,5 +1,5 @@
 import "./share.css";
-import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
+import { MdPermMedia,MdLabel, MdRoom, MdEmojiEmotions } from "react-icons/md";
 
 export default function Share() {
   return (
@@ -16,19 +16,19 @@ export default function Share() {
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">
-                    <PermMedia htmlColor="tomato" className="shareIcon"/>
+                    <MdPermMedia htmlColor="tomato" className="shareIcon"/>
                     <span className="shareOptionText">Photo or Video</span>
                 </div>
                 <div className="shareOption">
-                    <Label htmlColor="blue" className="shareIcon"/>
+                    <MdLabel htmlColor="blue" className="shareIcon"/>
                     <span className="shareOptionText">Tag</span>
                 </div>
                 <div className="shareOption">
-                    <Room htmlColor="green" className="shareIcon"/>
+                    <MdRoom htmlColor="green" className="shareIcon"/>
                     <span className="shareOptionText">Location</span>
                 </div>
                 <div className="shareOption">
-                    <EmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
+                    <MdEmojiEmotions htmlColor="goldenrod" className="shareIcon"/>
                     <span className="shareOptionText">Feelings</span>
                 </div>
             </div>
