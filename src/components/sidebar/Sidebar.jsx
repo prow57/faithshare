@@ -1,7 +1,7 @@
 import "./sidebar.css";
 import {IoChatbox} from "react-icons/io5";
 import {FaBookmark, FaPlayCircle} from "react-icons/fa";
-import { MdFeed, MdGroups2 } from "react-icons/md";
+import { MdFeed, MdGroups2, MdChurch, MdEvent } from "react-icons/md";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
