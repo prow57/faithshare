@@ -50,10 +50,10 @@ export default function Register() {
         </div>
         <div className="loginRight">
           <div className="loginBox">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="loginRight loginBox">
               <input
                 type="text"
-                placeholder="FUll Name"
+                placeholder="Full Name"
                 className="loginInput"
                 name="fullName"
                 value={formData.fullName}
@@ -100,3 +100,5 @@ export default function Register() {
     </div>
   );
 }
+
+
